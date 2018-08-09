@@ -8,8 +8,9 @@ import 'vant/lib/vant-css/index.css';
 
 import request from './request';
 
-import * as filters from './filters'; // 全局vue filter
+import * as filters from './filters'; 
 
+// 挂载全局vue filter
 Object.keys(filters).forEach(key => {
     Vue.filter(key, filters[key])
 });
